@@ -1,0 +1,15 @@
+COMPUTER_NAME=$(scutil --get ComputerName)
+SUPPORT_FOLDER="$HOME/Library/Application Support/Time Machine"
+BACKUP_SCRIPT="backup.bash"
+VOLUME_FOLDER="/Volumes"
+SOURCE_FOLDER="$VOLUME_FOLDER/LaCie Rugged"
+TARGET_VOLUME="/LaCie"
+TARGET_FOLDER="/Backups.photos+videos/$COMPUTER_NAME"
+LOCK_FILE=".timemachine.lock"
+ICON="VolumeIcon"
+LOG_FILE="TimeMachine.log"
+LAUNCH_AGENT_FOLDER="$HOME/Library/LaunchAgents"
+PERIODIC_LAUNCH_AGENT="net.ddns.christiaanboersma.timemachine.periodic"
+WATCHER_LAUNCH_AGENT="net.ddns.christiaanboersma.timemachine"
+DELAY=60
+DELTA_HOURS=5
