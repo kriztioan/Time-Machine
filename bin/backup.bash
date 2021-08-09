@@ -104,7 +104,7 @@ function main() {
 
     #caffeinate /usr/local/bin/rsync -auAX \
     caffeinate /usr/bin/rsync -au -E \
-        --exclude-from="$SUPPORT_FOLDER/config/timemachine.exclude" \
+        --exclude-from="$SUPPORT_FOLDER/etc/timemachine.exclude" \
         --links --partial \
         --numeric-ids \
         --stats --human-readable \
